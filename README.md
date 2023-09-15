@@ -16,10 +16,9 @@ Tailwind CSS es un framework que está hecho en JavaScript y es distribuido como
 
 Con esto, estás configurando Tailwind para que analice todos los archivos .html y .js que estén dentro de la carpeta «src» y los procese para generar las clases CSS de Tailwind necesarias.
 
-### 4. Crea dentro de la carpeta «src» un archivo «input.css» y pega en él el siguiente código:
+### 5. Crea dentro de la carpeta «src» un archivo «input.css» y pega en él el siguiente código:
 
-`css
-    @tailwind base;
+`   @tailwind base;
     @tailwind components;
     @tailwind utilities;
 `
@@ -29,7 +28,7 @@ Con esto, estás configurando Tailwind para que analice todos los archivos .html
 
 Esto sirve para importar los estilos predefinidos de Tailwind en tu proyecto.
 
-### 5. Ejecuta el siguiente comando en la consola o añádelo al script en el «package.json»:
+### 6. Ejecuta el siguiente comando en la consola o añádelo al script en el «package.json»:
 `npx tailwindcss -i ./src/input.css -o ./dist/output.css --watch`
 
 Esto sirve para compilar tu CSS, es decir, a partir de un archivo CSS de entrada se generará un archivo CSS de salida que estará optimizado y solo con las clases que hayas utilizado. De esta manera, evitas que se carguen siempre todas las clases de Tailwind CSS y consigues optimizar los archivos de tu web.
