@@ -1,3 +1,10 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+@layer utilities {
+    .brand-logo {
+        @apply sm:me-auto max-w-[200px] w-full h-min mb-10 sm:mb-0;
+    }
+}
