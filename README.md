@@ -1,4 +1,8 @@
-# Cómo instalar Tailwind CSS
+# Proyecto educativo para experimentar con TailWindCSS
+Lenguajes y tecnologías utlizados: HTML, JavaScript(Vanilla), CSS(TailWind)
+
+---
+## Cómo instalar Tailwind CSS
 
 Tailwind CSS es un framework que está hecho en JavaScript y es distribuido como un paquete de NPM. Esto quiere decir que, en principio, necesitas tener Node.js y NPM instalados en tu equipo para instalar Tailwind.
 

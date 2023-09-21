@@ -1,15 +1,15 @@
 <!DOCTYPE html>
 <html lang="en" class="dark">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="./assets/brand/favicon.png" type="image/x-icon">
-    <title>Typography Plugin</title>
-    <link rel="stylesheet" href="./css/output.css" />
-</head>
-<body class="dark:bg-slate-800 dark:text-white bg-slate-100 text-slate-800 font-sans transition-all">
-<section class="container mx-auto">
-			<nav class="py-4 border-b-2 flex flex-row items-center justify-center px-3 sm:px-0">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="shortcut icon" href="./assets/brand/favicon.png" type="image/x-icon" />
+		<title>Typography Plugin</title>
+		<link rel="stylesheet" href="./css/output.css" />
+	</head>
+	<body class="dark:bg-slate-800 dark:text-white bg-slate-100 text-slate-800 font-sans transition-all">
+	<section class="container mx-auto">
+			<nav class="py-4 border-b-2 flex flex-row items-center flex-wrap justify-center px-3 sm:px-0">
 				<svg class="brand-logo" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 262 33">
 					<g fill-rule="evenodd" clip-path="url(#prefix__clip0)" clip-rule="evenodd">
 						<path
@@ -25,82 +25,107 @@
 						<clipPath id="prefix__clip0"><path fill="currentColor" d="M0 0h262v32.4H0z" /></clipPath>
 					</defs>
 				</svg>
-
-                <ul class="flex flex-row items-center justify-between divide-x divide-slate-800 dark:divide-slate-400">
-                <li class="px-2 text-center">
-        <a class="hover:text-blue-600 hover:dark:text-sky-500 hover:border-b-2 hover:border-blue-600 hover:dark:border-sky-500" href="./index.html">Default</a></li>
-                <li class="px-2 text-center">
-                    <a class="hover:text-blue-600 hover:dark:text-sky-500 hover:border-b-2 hover:border-blue-600 hover:dark:border-sky-500" href="./type.html">Typography</a>
-                </li>
-                <li class="px-2 text-center">
-        <a class="hover:text-blue-600 hover:dark:text-sky-500 hover:border-b-2 hover:border-blue-600 hover:dark:border-sky-500" href="./aspect.html">Aspec-ratio</a>
-                </li>
-                <li class="px-2 text-center">
-                    <a class="hover:text-blue-600 hover:dark:text-sky-500 hover:border-b-2 hover:border-blue-600 hover:dark:border-sky-500" href="./forms.html">Forms</a>
-                </li>
-            </ul>
+				<ul class="mt-10 w-full sm:w-max order-2 sm:order-1 sm:mt-0 flex-grow-2 flex flex-row items-center justify-between divide-x divide-slate-800 dark:divide-slate-400 text-xs
+				sm:text-base">
+					<li class="px-2 text-center grow">
+            <a class="hover:text-blue-600 hover:dark:text-sky-500 hover:border-b-2 hover:border-blue-600 hover:dark:border-sky-500" href="./index.html">Default</a></li>
+					<li class="px-2 text-center grow">
+						<a class="hover:text-blue-600 hover:dark:text-sky-500 hover:border-b-2 hover:border-blue-600 hover:dark:border-sky-500" href="./type.html">Typography</a>
+					</li>
+					<li class="px-2 text-center grow">
+            <a class="hover:text-blue-600 hover:dark:text-sky-500 hover:border-b-2 hover:border-blue-600 hover:dark:border-sky-500" href="./aspect.html">Aspec-ratio</a>
+					</li>
+					<li class="px-2 text-center grow">
+						<a class="hover:text-blue-600 hover:dark:text-sky-500 hover:border-b-2 hover:border-blue-600 hover:dark:border-sky-500" href="./forms.html">Forms</a>
+					</li>
+				</ul>
 				<button
 					id="typeModeColor"
-					class="ms-auto dark:bg-slate-100 bg-slate-800 rounded-3xl px-5 py-2 dark:border-slate-800 text-sm"
+					class="order-1 sm:order-2 ms-auto sm:dark:bg-slate-100 sm:bg-slate-800 rounded-3xl px-5 py-2 dark:border-slate-200 border text-sm"
 				>
 					<span
-						class="hidden dark:block text-slate-800 after:content-['🌝'] after:ms-2 after:shadow-yellow-500/50 after:shadow-md after:rounded-xl"
+						class="hidden dark:block text-slate-800 after:content-['🌝'] sm:after:ms-2 after:shadow-yellow-500/50 after:shadow-md after:rounded-xl"
 					>
-						Light
+						<span class="hidden sm:inline">Light</span>
 					</span>
 					<span
-						class="dark:hidden text-slate-300 after:content-['🌚'] after:ms-[0.7rem] after:shadow-blue-400/50 after:shadow-md after:rounded-xl"
+						class="dark:hidden text-slate-300 after:content-['🌚'] sm:after:ms-[0.7rem] after:shadow-blue-400/50 after:shadow-md after:rounded-xl"
 					>
-						Dark
+						<span class="hidden sm:inline">Dark</span>
 					</span>
 				</button>
 			</nav>
 		</section>
-    <main class="container mx-auto py-12 px-3">
-        <article class="prose lg:prose-xl pb-12 dark:prose-p:text-white dark:prose-h3:text-white dark:prose-pre:bg-black dark:prose-h1:text-white dark:prose-h2:text-white">
-                <h1>TailWindCSS Typography</h1>
-                <h3>Cómo añadir el plugin de Typography a Tailwind:</h3>
-                <p>01 - Añadir en el archivo tailwind.config.js la siguiente linea en el array de plugins:</p>
-                <pre><code> plugins: [ require('@tailwindcss/typography'),]</code></pre>
-                <p>02 - Abrir la consola y ejecutar el comando:</p>
-                <pre><code>npm install -D @tailwindcss/typography</code></pre>
-        </article>
-        <article class="prose lg:prose-xl prose-h2:text-blue-600 mb-10 dark:prose-p:text-white dark:prose-h3:text-white dark:prose-li:text-white">
-                <h2 class="">Uso basico</h2>
-                <p>Ahora podemos usar las clases "<i>prose</i>" para implementar el plugin</p>
-                <h3>Estilos por defecto de <code><i>prose</i></code>:</h3>
-                <hr>
-                <ul>
-                <li> item 1</li>
-                <li> item 2</li>
-                <li> item 3</li>
-                </ul>
-                <ol>
-                <li>item 1</li>
-                <li>item 2</li>
-                </ol>
-        </article>
-        <article class="prose prose-stone prose-sm md:prose-lg lg:prose-xl xl:prose-2xl dark:prose-invert dark:prose-h3:text-red-500">
-            <h2>Escala de Grises y Tamaño</h2>
-            <p>Si usamos la clase <code><i>prose-slate, prose-zinc, prose-stone, prose-neutral</i></code> obtenemos estilos con escala de grises</p>
-            <p>Con <code><i>prose-sm, prose-lg, prose-xl, prose-2xl</i></code></p>
-            <h3>Adapting to dark mode</h3>
-            <p>Con<code><i>dark:prose-invert</i></code> se puede implementar un dark mode rápido</p>
-            <hr>
-            <ul>
-                <li>item 1 </li>
-                <li>item 2 </li>
-                <li>item 3 </li>
-            </ul>
-            <ol>
-                <li>item 1</li>
-                <li>item 2</li>
-            </ol>
-        </article>
-    </main>  
-    <footer class="container mx-auto pt-4 pb-12 border-t-2">
-        <p class="text-center text-xs">Proyecto educativo de Rodrigo Fernández - 2023</p>
-    </footer>  
-</body>
-<script src="./js/main.js"></script>
+		<main class="container mx-auto py-12 px-3">
+			<article
+				class="prose lg:prose-xl pb-12 dark:prose-p:text-white dark:prose-h3:text-white dark:prose-pre:bg-black dark:prose-h1:text-white dark:prose-h2:text-white"
+			>
+				<h1>TailWindCSS Typography</h1>
+				<h3>Cómo añadir el plugin de Typography a Tailwind:</h3>
+				<p>01 - Añadir en el archivo tailwind.config.js la siguiente linea en el array de plugins:</p>
+				<pre><code> plugins: [ require('@tailwindcss/typography'),]</code></pre>
+				<p>02 - Abrir la consola y ejecutar el comando:</p>
+				<pre><code>npm install -D @tailwindcss/typography</code></pre>
+			</article>
+			<article
+				class="prose lg:prose-xl prose-h2:text-blue-600 mb-10 dark:prose-p:text-white dark:prose-h3:text-white dark:prose-li:text-white"
+			>
+				<h2 class="">Uso basico</h2>
+				<p>
+					Ahora podemos usar las clases "
+					<i>prose</i>
+					" para implementar el plugin
+				</p>
+				<h3>
+					Estilos por defecto de
+					<code><i>prose</i></code>
+					:
+				</h3>
+				<hr />
+				<ul>
+					<li>item 1</li>
+					<li>item 2</li>
+					<li>item 3</li>
+				</ul>
+				<ol>
+					<li>item 1</li>
+					<li>item 2</li>
+				</ol>
+			</article>
+			<article
+				class="prose prose-stone prose-sm md:prose-lg lg:prose-xl xl:prose-2xl dark:prose-invert dark:prose-h3:text-red-500"
+			>
+				<h2>Escala de Grises y Tamaño</h2>
+				<p>
+					Si usamos la clase
+					<code><i>prose-slate, prose-zinc, prose-stone, prose-neutral</i></code>
+					obtenemos estilos con escala de grises
+				</p>
+				<p>
+					Con
+					<code><i>prose-sm, prose-lg, prose-xl, prose-2xl</i></code>
+				</p>
+				<h3>Adapting to dark mode</h3>
+				<p>
+					Con
+					<code><i>dark:prose-invert</i></code>
+					se puede implementar un dark mode rápido
+				</p>
+				<hr />
+				<ul>
+					<li>item 1</li>
+					<li>item 2</li>
+					<li>item 3</li>
+				</ul>
+				<ol>
+					<li>item 1</li>
+					<li>item 2</li>
+				</ol>
+			</article>
+		</main>
+		<footer class="container mx-auto pt-4 pb-12 border-t-2">
+			<p class="text-center text-xs">Proyecto educativo de Rodrigo Fernández - 2023</p>
+		</footer>
+	</body>
+	<script src="./js/main.js"></script>
 </html>
