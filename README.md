@@ -1,4 +1,8 @@
-# Cómo instalar Tailwind CSS
+# Proyecto educativo para experimentar con TailWindCSS
+Lenguajes y tecnologías utlizados: HTML, JavaScript(Vanilla), CSS(TailWind)
+
+---
+## Cómo instalar Tailwind CSS
 
 Tailwind CSS es un framework que está hecho en JavaScript y es distribuido como un paquete de NPM. Esto quiere decir que, en principio, necesitas tener Node.js y NPM instalados en tu equipo para instalar Tailwind.
 
@@ -29,7 +33,7 @@ Con esto, estás configurando Tailwind para que analice todos los archivos .html
 Esto sirve para importar los estilos predefinidos de Tailwind en tu proyecto.
 
 ### 6. Ejecuta el siguiente comando en la consola o añádelo al script en el «package.json»:
-`npx tailwindcss -i ./src/input.css -o ./dist/output.css --watch`
+`npx tailwindcss -i ./src/input.css -o ./docs/css/output.css --watch`
 
 Esto sirve para compilar tu CSS, es decir, a partir de un archivo CSS de entrada se generará un archivo CSS de salida que estará optimizado y solo con las clases que hayas utilizado. De esta manera, evitas que se carguen siempre todas las clases de Tailwind CSS y consigues optimizar los archivos de tu web.
 

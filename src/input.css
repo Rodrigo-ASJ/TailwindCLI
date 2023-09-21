@@ -5,6 +5,6 @@
 
 @layer utilities {
     .brand-logo {
-        @apply me-auto max-w-[150px] sm:max-w-[200px] w-full h-min ;
+        @apply me-auto max-w-[150px] sm:max-w-[140px] lg:max-w-[200px] w-full h-min;
     }
 }
