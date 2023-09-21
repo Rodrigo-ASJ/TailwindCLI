@@ -3,8 +3,23 @@ module.exports = {
   content: ["./src/**/*.{html,js}"],
   darkMode: 'class',
   theme: {
-    extend: {},
+  
+    extend: {
+
+      fontSize: {
+        '5xl': ['4.5rem', {
+          lineHeight: 'auto',
+          letterSpacing: 'inherit',
+          fontWeight: 'inherit',
+        }]
+        }
+
+    },
+    
   },
-  plugins: [],
+  plugins: [
+    require('@tailwindcss/typography'),
+
+  ],
 }
 
