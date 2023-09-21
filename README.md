@@ -29,7 +29,7 @@ Con esto, estás configurando Tailwind para que analice todos los archivos .html
 Esto sirve para importar los estilos predefinidos de Tailwind en tu proyecto.
 
 ### 6. Ejecuta el siguiente comando en la consola o añádelo al script en el «package.json»:
-`npx tailwindcss -i ./src/input.css -o ./dist/output.css --watch`
+`npx tailwindcss -i ./src/input.css -o ./docs/css/output.css --watch`
 
 Esto sirve para compilar tu CSS, es decir, a partir de un archivo CSS de entrada se generará un archivo CSS de salida que estará optimizado y solo con las clases que hayas utilizado. De esta manera, evitas que se carguen siempre todas las clases de Tailwind CSS y consigues optimizar los archivos de tu web.
 
