@@ -7,4 +7,7 @@
     .brand-logo {
         @apply me-auto max-w-[150px] sm:max-w-[140px] lg:max-w-[200px] w-full h-min;
     }
+    button[aria-current="true"]{
+        @apply border-sky-500 text-sky-600 border-b-2 font-medium ;
+    }
 }
