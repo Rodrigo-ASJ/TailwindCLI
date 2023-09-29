@@ -25,18 +25,40 @@
 						<clipPath id="prefix__clip0"><path fill="currentColor" d="M0 0h262v32.4H0z" /></clipPath>
 					</defs>
 				</svg>
-				<ul class="mt-10 w-full sm:w-max order-2 sm:order-1 sm:mt-0 flex-grow-2 flex flex-row items-center justify-between divide-x divide-slate-800 dark:divide-slate-400 text-xs
-				sm:text-base">
+				<ul
+					class="mt-10 w-full sm:w-max order-2 sm:order-1 sm:mt-0 flex-grow-2 flex flex-row items-center justify-between divide-x divide-slate-800 dark:divide-slate-400 text-xs sm:text-base"
+				>
 					<li class="px-2 text-center grow">
-            <a class="hover:text-blue-600 hover:dark:text-sky-500 hover:border-b-2 hover:border-blue-600 hover:dark:border-sky-500" href="./index.html">Default</a></li>
-					<li class="px-2 text-center grow">
-						<a class="hover:text-blue-600 hover:dark:text-sky-500 hover:border-b-2 hover:border-blue-600 hover:dark:border-sky-500" href="./type.html">Typography</a>
+						<a
+							class="hover:text-blue-600 hover:dark:text-sky-500 hover:border-b-2 hover:border-blue-600 hover:dark:border-sky-500"
+							href="./index.html"
+						>
+							Default
+						</a>
 					</li>
 					<li class="px-2 text-center grow">
-            <a class="hover:text-blue-600 hover:dark:text-sky-500 hover:border-b-2 hover:border-blue-600 hover:dark:border-sky-500" href="./aspect.html">Aspec-ratio</a>
+						<a
+							class="hover:text-blue-600 hover:dark:text-sky-500 hover:border-b-2 hover:border-blue-600 hover:dark:border-sky-500"
+							href="./type.html"
+						>
+							Typography
+						</a>
 					</li>
 					<li class="px-2 text-center grow">
-						<a class="hover:text-blue-600 hover:dark:text-sky-500 hover:border-b-2 hover:border-blue-600 hover:dark:border-sky-500" href="./forms.html">Forms</a>
+						<a
+							class="hover:text-blue-600 hover:dark:text-sky-500 hover:border-b-2 hover:border-blue-600 hover:dark:border-sky-500"
+							href="./aspect.html"
+						>
+							Aspec-ratio
+						</a>
+					</li>
+					<li class="px-2 text-center grow">
+						<a
+							class="hover:text-blue-600 hover:dark:text-sky-500 hover:border-b-2 hover:border-blue-600 hover:dark:border-sky-500"
+							href="./forms.html"
+						>
+							Forms
+						</a>
 					</li>
 				</ul>
 				<button
@@ -77,20 +99,19 @@
 				<div class="sm:hidden">
 					<label for="Tab" class="sr-only">Tab</label>
 
-					<select id="Tab" class="w-full rounded-md border-gray-200">
-						<option>Settings</option>
-						<option>Messages</option>
-						<option>Archive</option>
-						<option select>Notifications</option>
+					<select id="apiTab" class="w-full rounded-md border-gray-200 dark:text-slate-800">
+						<option value="episode">Episodios</option>
+						<option value="location">Loaciones</option>
+						<option value="character" selected>Personajes</option>	
 					</select>
 				</div>
 
 				<div class="hidden sm:block">
 					<div class="border-b border-gray-200">
-						<nav class="-mb-px flex gap-6" aria-label="Tabs">
-							<a
-								href="#"
-								class="inline-flex shrink-0 items-center gap-2 border-b-2 border-transparent px-1 pb-4 text-sm font-medium text-gray-500 hover:border-gray-300 hover:text-gray-700"
+						<nav id="apiNav" class="-mb-px flex gap-6" aria-label="Tabs">
+							<button
+								id="episode"
+								class="inline-flex shrink-0 items-center gap-2 border-b-2 border-transparent px-1 pb-4 text-sm font-medium text-gray-500 hover:border-gray-300 hover:text-gray-700 dark:hover:text-white"
 							>
 								<svg
 									xmlns="http://www.w3.org/2000/svg"
@@ -109,11 +130,11 @@
 								</svg>
 
 								Episodios
-							</a>
+							</button>
 
-							<a
-								href="#"
-								class="inline-flex shrink-0 items-center gap-2 border-b-2 border-transparent px-1 pb-4 text-sm font-medium text-gray-500 hover:border-gray-300 hover:text-gray-700"
+							<button
+								id="location"
+								class="inline-flex shrink-0 items-center gap-2 border-b-2 border-transparent px-1 pb-4 text-sm font-medium text-gray-500 hover:border-gray-300 hover:text-gray-700 dark:hover:text-white"
 							>
 								<svg
 									xmlns="http://www.w3.org/2000/svg"
@@ -131,12 +152,12 @@
 								</svg>
 
 								Locaciones
-							</a>
+							</button>
 
-							<a
-								href="#"
-								class="inline-flex shrink-0 items-center gap-2 border-b-2 border-sky-500 px-1 pb-4 text-sm font-medium text-sky-600"
-								aria-current="page"
+							<button
+								id="character"
+								class="inline-flex shrink-0 items-center gap-2  px-1 pb-4 text-sm text-gray-500 hover:text-gray-700 dark:hover:text-white"
+								aria-current="true"
 							>
 								<svg
 									xmlns="http://www.w3.org/2000/svg"
@@ -154,7 +175,7 @@
 								</svg>
 
 								Personajes
-							</a>
+							</button>
 						</nav>
 					</div>
 				</div>
@@ -216,7 +237,7 @@
 			<p class="text-center text-xs">Proyecto educativo de Rodrigo Fernández - 2023</p>
 		</footer>
 
-		<template id="cardTemplate">
+		<template id="cardTemplateCharacters">
 			<div class="card border-2 border-slate-800 dark:border-slate-300 p-4">
 				<h6 class="card_name"></h6>
 				<img class="card_img" src="" alt="" />
@@ -234,6 +255,44 @@
 				</p>
 			</div>
 		</template>
+
+		<template id="cardTemplateLocations">
+			<div class="card border-2 border-slate-800 dark:border-slate-300 p-4">
+				<h6 class="card_name"></h6>
+				<p>
+					<strong>Tipo:</strong>
+					<span class="card_type"></span>
+				</p>
+				<p>
+					<strong>Dimension:</strong>
+					<span class="card_dimension"></span>
+				</p>
+				<p>
+					<strong>Residentes:</strong>
+					<span class="card_residents"></span>
+				</p>
+			</div>
+		</template>
+
+		<template id="cardTemplateEpisodes">
+			<div class="card border-2 border-slate-800 dark:border-slate-300 p-4">
+				<h6 class="card_name"></h6>
+				
+				<p>
+					<strong>Episodio:</strong>
+					<span class="card_episode"></span>
+				</p>
+				<p>
+					<strong>fecha de emisión:</strong>
+					<span class="card_air_date"></span>
+				</p>
+				
+			</div>
+		</template>
+
+
+
 	</body>
-	<script src="./js/main.js"></script>
+
+	<script type="module" async src="./js/home.js"></script>
 </html>
