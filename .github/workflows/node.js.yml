@@ -19,3 +19,5 @@ jobs:
       run: echo "Hellow World from GitHub Actions"
     - name: Dime la fecha
       run: date
+    - name: Muestra el contenido del directiorio
+      run: ls -la
