@@ -1,0 +1,21 @@
+# This workflow will do a clean installation of node dependencies, cache/restore them, build the source code and run tests across different versions of node
+# For more information see: https://docs.github.com/en/actions/automating-builds-and-tests/building-and-testing-nodejs
+
+name: Prueba de Git Hub Actions
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+  rodrigo:
+
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: 'Hellow world'
+      run: echo "Hellow World from GitHub Actions"
+    - name: Dime la fecha
+      run: date
