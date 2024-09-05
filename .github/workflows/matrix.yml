@@ -2,9 +2,13 @@ name: Tutorial Matrix GitHub Actions
 
 on:
   push:
-    branches: [ "main" ]
+    branches: [ "main", "dev", "githubActions" ]
   pull_request:
     branches: [ "main" ]
+
+concurrency: 
+    group: ci-${{ github.ref }}  
+    cancel-in-progress: true 
 
 jobs:
   nuevaMatrix:
