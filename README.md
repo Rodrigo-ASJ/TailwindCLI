@@ -1,3 +1,5 @@
+[![Prueba de Git Hub Actions](https://github.com/Rodrigo-ASJ/TailwindCLI/actions/workflows/node.js.yml/badge.svg)](https://github.com/Rodrigo-ASJ/TailwindCLI/actions/workflows/node.js.yml)
+
 # Proyecto educativo para experimentar con TailWindCSS
 Lenguajes y tecnologías utlizados: HTML, JavaScript(Vanilla), CSS(TailWind)
 
