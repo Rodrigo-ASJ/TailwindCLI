@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "tail": "npx tailwindcss -i ./src/input.css -o ./docs/css/output.css --watch"
+    "tail": "npx tailwindcss -i ./src/input.css -o ./docs/css/output.css --watch",
+    "hola": "echo 'Hola node js'"
   },
   "keywords": [],
   "author": "",
