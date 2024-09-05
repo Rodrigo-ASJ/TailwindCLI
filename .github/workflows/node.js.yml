@@ -15,6 +15,7 @@ jobs:
     runs-on: ubuntu-latest
     
     steps:
+    - uses: actions/checkout@v4
     - name: 'Hellow world'
       run: echo "Hellow World from GitHub Actions"
     - name: Dime la fecha
